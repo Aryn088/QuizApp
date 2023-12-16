@@ -13,7 +13,6 @@ let scoreCount = 0;
 let count = 21;
 let countdown;
 
-//Questions and Options array
 
 const quizArray = [
     {
@@ -77,14 +76,14 @@ const quizArray = [
     },
 ];
 
-//Restart Quiz
+
 restart.addEventListener("click", () => {
     initial();
     displayContainer.classList.remove("hide");
     scoreContainer.classList.add("hide");
 });
 
-//Next Button
+
 nextBtn.addEventListener(
     "click",
     (displayNext = () => {
@@ -193,7 +192,6 @@ function checker(userOption) {
     });
 }
 
-//initial setup
 function initial() {
     quizContainer.innerHTML = "";
     questionCount = 0;
@@ -205,14 +203,14 @@ function initial() {
     quizDisplay(questionCount);
 }
 
-//when user click on start button
+
 startButton.addEventListener("click", () => {
     startScreen.classList.add("hide");
     displayContainer.classList.remove("hide");
     initial();
 });
 
-//hide quiz and display start screen
+
 window.onload = () => {
     startScreen.classList.remove("hide");
     displayContainer.classList.add("hide");
