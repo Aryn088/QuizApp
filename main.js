@@ -163,7 +163,7 @@ function quizCreator() {
     }
 }
 
-//Checker Function to check if option is correct or not
+
 function checker(userOption) {
     let userSolution = userOption.innerText;
     let question =
